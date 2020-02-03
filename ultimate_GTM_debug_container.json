@@ -1,0 +1,947 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2020-02-03 08:36:45",
+    "containerVersion": {
+        "path": "accounts/124588580/containers/13576102/versions/3",
+        "accountId": "124588580",
+        "containerId": "13576102",
+        "containerVersionId": "3",
+        "name": "v3",
+        "container": {
+            "path": "accounts/124588580/containers/13576102",
+            "accountId": "124588580",
+            "containerId": "13576102",
+            "name": "Debug Template",
+            "publicId": "GTM-NQL75L3",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1580116367624",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/124588580/containers/13576102/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "tagId": "3",
+                "name": "DEBUG - All Events",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "All Events"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{DEBUG - UA settings var}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{DEBUG - dl - event stringified}}"
+                    }
+                ],
+                "fingerprint": "1579866612080",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "monitoringMetadataTagNameKey": "name"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "tagId": "4",
+                "name": "DEBUG - Javascript errors",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "Javascript Error"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "metric",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cm index javascript errors}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "metric",
+                                        "value": "1"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{DEBUG - UA settings var}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "{{Error Message}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventLabel",
+                        "value": "{{Error Line}}: {{Error URL}}"
+                    }
+                ],
+                "fingerprint": "1579875831740",
+                "firingTriggerId": [
+                    "12"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "tagId": "1",
+                "name": "DEBUG - Monitor GTM Tags",
+                "type": "cvt_13576102_7",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "maxTags",
+                        "value": "10"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "clientId",
+                        "value": "{{DEBUG - js - clientId of current tracker}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "uaCode",
+                        "value": "{{DEBUG - UA id of debug profile}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "excludeSelf",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "batchHits",
+                        "value": "yes"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customEventLabel",
+                        "value": "{{DEBUG - dl - event stringified}}"
+                    }
+                ],
+                "fingerprint": "1579866590750",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "monitoringMetadataTagNameKey": "name"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "tagId": "2",
+                "name": "DEBUG - gtm.load Page View with speed metrics",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "metric",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cm index dom complete time}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "metric",
+                                        "value": "{{DEBUG - timing - time to domcomplete}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cm index dom interactive time}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "metric",
+                                        "value": "{{DEBUG - timing - time to dominteractive}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cm index page load time}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "metric",
+                                        "value": "{{DEBUG - timing - total page load time}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cm index page render time}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "metric",
+                                        "value": "{{DEBUG - timing - page render time}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{DEBUG - UA settings var}}"
+                    }
+                ],
+                "fingerprint": "1579871165672",
+                "firingTriggerId": [
+                    "9"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "monitoringMetadataTagNameKey": "name"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "triggerId": "5",
+                "name": "DEBUG - All Events",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1579860048058"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "triggerId": "6",
+                "name": "DEBUG - Ecommerce pushed in Event",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": ".*"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DEBUG - dl - event stringified}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "\"ecommerce\":{"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1579860693319"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "triggerId": "9",
+                "name": "DEBUG - gtm.load",
+                "type": "WINDOW_LOADED",
+                "fingerprint": "1579871160437"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "triggerId": "12",
+                "name": "DEBUG - javascript error",
+                "type": "JS_ERROR",
+                "fingerprint": "1579875827150"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "4",
+                "name": "DEBUG - UA id of debug profile",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "UA-58780303-2"
+                    }
+                ],
+                "fingerprint": "1579866197237",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "11",
+                "name": "DEBUG - UA settings var",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "dimension",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cd index clientID}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{DEBUG - js - clientId of current tracker}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cd index Full URL}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Page URL}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cd index Referrer}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Referrer}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cd index timestamp}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{DEBUG - hit timestamp}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "index",
+                                        "value": "{{DEBUG - cd index GTM info}}"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "dimension",
+                                        "value": "{{Container ID}} - {{Container Version}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{DEBUG - UA id of debug profile}}"
+                    }
+                ],
+                "fingerprint": "1579875375703"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "7",
+                "name": "DEBUG - cd index Full URL",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "2"
+                    }
+                ],
+                "fingerprint": "1579861062036",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "21",
+                "name": "DEBUG - cd index GTM info",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "5"
+                    }
+                ],
+                "fingerprint": "1579875289333",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "8",
+                "name": "DEBUG - cd index Referrer",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "3"
+                    }
+                ],
+                "fingerprint": "1579861105251",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "5",
+                "name": "DEBUG - cd index clientID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "1"
+                    }
+                ],
+                "fingerprint": "1579860886231",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "9",
+                "name": "DEBUG - cd index timestamp",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "4"
+                    }
+                ],
+                "fingerprint": "1579861230506",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "19",
+                "name": "DEBUG - cm index dom complete time",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "3"
+                    }
+                ],
+                "fingerprint": "1579870327081",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "20",
+                "name": "DEBUG - cm index dom interactive time",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "4"
+                    }
+                ],
+                "fingerprint": "1579870355549",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "22",
+                "name": "DEBUG - cm index javascript errors",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "5"
+                    }
+                ],
+                "fingerprint": "1579875784865",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "17",
+                "name": "DEBUG - cm index page load time",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "1"
+                    }
+                ],
+                "fingerprint": "1579870268945",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "18",
+                "name": "DEBUG - cm index page render time",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "2"
+                    }
+                ],
+                "fingerprint": "1579870298925",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "2",
+                "name": "DEBUG - dl - ecommerce object",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce"
+                    }
+                ],
+                "fingerprint": "1579859433393",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "1",
+                "name": "DEBUG - dl - event stringified",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\n  e = {{Event}};\n  if (e === 'gtm.js') return {{DEBUG - stringified full datalayer}};\n  // look from top of DL down to match event name\n  for(var i = window.dataLayer.length-1; i>=0; i--){\n  \tif(window.dataLayer[i].event === e ){\n    \treturn JSON.stringify(window.dataLayer[i])\n    } \n  }\n}"
+                    }
+                ],
+                "fingerprint": "1580116467253",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "3",
+                "name": "DEBUG - dl - stringified ecommerce object",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var ec = {{DEBUG - dl - ecommerce object}};\n  if (typeof ec !== \"undefined\")\n    return JSON.stringify(ec)\n}"
+                    }
+                ],
+                "fingerprint": "1579859985948",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "10",
+                "name": "DEBUG - hit timestamp",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n    // Thanks Simo!\n    var now = new Date();\n    var tzo = -now.getTimezoneOffset();\n    var dif = tzo >= 0 ? '+' : '-';\n    var pad = function(num) {\n        var norm = Math.abs(Math.floor(num));\n        return (norm < 10 ? '0' : '') + norm;\n    };\n    return now.getFullYear() \n        + '-' + pad(now.getMonth()+1)\n        + '-' + pad(now.getDate())\n        + 'T' + pad(now.getHours())\n        + ':' + pad(now.getMinutes()) \n        + ':' + pad(now.getSeconds())\n        + '.' + pad(now.getMilliseconds())\n        + dif + pad(tzo / 60) \n        + ':' + pad(tzo % 60);\n}"
+                    }
+                ],
+                "fingerprint": "1579861260191",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "6",
+                "name": "DEBUG - js - clientId of current tracker",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  // thanks, Simo!\n  try {\n    var trackers = ga.getAll();\n    var i, len;\n    for (i = 0, len = trackers.length; i < len; i += 1) {\n      if (trackers[i].get('trackingId') === {{DEBUG - UA id of debug profile}}) {\n        return trackers[i].get('clientId');\n      }\n    }\n  } catch(e) {}  \n  return 'false';\n}"
+                    }
+                ],
+                "fingerprint": "1579866276856",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "23",
+                "name": "DEBUG - stringified full datalayer",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() { return JSON.stringify( window.dataLayer ) }"
+                    }
+                ],
+                "fingerprint": "1580116367624",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "15",
+                "name": "DEBUG - timing - page render time",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  \n  var perfData = window.performance.timing;\n  return perfData.domComplete - perfData.domLoading;\n\n}"
+                    }
+                ],
+                "fingerprint": "1579870113999",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "14",
+                "name": "DEBUG - timing - time to domcomplete",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  \n  var perfData = window.performance.timing;\n  return perfData.domComplete - perfData.responseStart;\n\n}"
+                    }
+                ],
+                "fingerprint": "1579870045030",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "13",
+                "name": "DEBUG - timing - time to dominteractive",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  \n  var perfData = window.performance.timing;\n  return perfData.domInteractive - perfData.responseStart;\n\n}"
+                    }
+                ],
+                "fingerprint": "1579869975568",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "variableId": "16",
+                "name": "DEBUG - timing - total page load time",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  \n  var perfData = window.performance.timing;\n  return perfData.loadEventEnd - perfData.navigationStart;\n\n}"
+                    }
+                ],
+                "fingerprint": "1579870197372",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "ERROR_MESSAGE",
+                "name": "Error Message"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "ERROR_URL",
+                "name": "Error URL"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "ERROR_LINE",
+                "name": "Error Line"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "CONTAINER_VERSION",
+                "name": "Container Version"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "CONTAINER_ID",
+                "name": "Container ID"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "type": "ENVIRONMENT_NAME",
+                "name": "Environment Name"
+            }
+        ],
+        "fingerprint": "1580116506239",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/124588580/containers/13576102/versions/3?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "124588580",
+                "containerId": "13576102",
+                "templateId": "7",
+                "name": "Monitor Google Tag Manager in Google Analytics",
+                "fingerprint": "1579872702538",
+                "templateData": "___INFO___\n\n{\n  \"displayName\": \"Monitor Google Tag Manager in Google Analytics\",\n  \"description\": \"A template for setting up tag monitoring in Google Tag Manager and store result in a Google Analytics property (using enhanced ecommerce)\",\n  \"__wm\": \"VGVtcGxhdGUtQXV0aG9yX0dvb2dsZS1UYWctTWFuYWdlci1Nb25pdG9yLVNpbW8tQWhhdmE\\u003d\",\n  \"securityGroups\": [],\n  \"id\": \"cvt_temp_public_id\",\n  \"type\": \"TAG\",\n  \"version\": 1,\n  \"brand\": {\n    \"displayName\": \"\",\n    \"id\": \"brand_dummy\",\n    \"thumbnail\": \"data:image/png;base64,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\"\n  },\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"help\": \"Make sure this is NOT your main UA property, but a DEBUG profile\",\n    \"alwaysInSummary\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"GA_TRACKING_ID\",\n        \"errorMessage\": \"The field must be a valid UA property string (UA-12345-6)\"\n      }\n    ],\n    \"displayName\": \"Analytics Property to send to\",\n    \"simpleValueType\": true,\n    \"name\": \"uaCode\",\n    \"type\": \"TEXT\",\n    \"valueHint\": \"UA-123213-1\"\n  },\n  {\n    \"displayName\": \"Advanced Setup and Customisation\",\n    \"name\": \"advanced\",\n    \"groupStyle\": \"ZIPPY_CLOSED\",\n    \"type\": \"GROUP\",\n    \"subParams\": [\n      {\n        \"help\": \"If left blank, the Event Label used to store the hit is the timestamp. You can use something custom here, like the contents of the dataLayer.\",\n        \"displayName\": \"Event Label to use\",\n        \"simpleValueType\": true,\n        \"name\": \"customEventLabel\",\n        \"type\": \"TEXT\"\n      },\n      {\n        \"help\": \"If left blank, a timestamp + random number is used. \\nYou can use a variable with the client ID of the current visitor (beware of the 500 hits limit!), or your own random number.\",\n        \"alwaysInSummary\": true,\n        \"displayName\": \"Client ID to use\",\n        \"simpleValueType\": true,\n        \"name\": \"clientId\",\n        \"type\": \"TEXT\"\n      },\n      {\n        \"help\": \"If you select \\u003cstrong\\u003eNo\\u003c/strong\\u003e, details of all the tags that fired for any given hit are sent in a single GET request. If you select \\u003cstrong\\u003eYes\\u003c/strong\\u003e, you can choose the maximum number of tags per request, and the tag will automatically send multiple requests if necessary.\",\n        \"displayName\": \"Batch hits\",\n        \"simpleValueType\": true,\n        \"name\": \"batchHits\",\n        \"type\": \"RADIO\",\n        \"radioItems\": [\n          {\n            \"displayValue\": \"No\",\n            \"value\": \"no\"\n          },\n          {\n            \"displayValue\": \"Yes\",\n            \"help\": \"\",\n            \"value\": \"yes\",\n            \"subParams\": [\n              {\n                \"help\": \"Enter the maximum number of tags per request that will be dispatched to the endpoint. If necessary, multiple requests will be made.\",\n                \"valueValidators\": [\n                  {\n                    \"type\": \"POSITIVE_NUMBER\"\n                  }\n                ],\n                \"displayName\": \"Maximum number of tags per request\",\n                \"defaultValue\": 10,\n                \"simpleValueType\": true,\n                \"name\": \"maxTags\",\n                \"type\": \"TEXT\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"type\": \"CHECKBOX\",\n        \"name\": \"excludeSelf\",\n        \"checkboxText\": \"Exclude tags with \\\"Debug\\\" in the name\",\n        \"simpleValueType\": true,\n        \"defaultValue\": true\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\n// Require the necessary APIs\nconst addEventCallback = require('addEventCallback');\nconst readFromDataLayer = require('copyFromDataLayer');\nconst sendPixel = require('sendPixel');\nconst getTimestamp = require('getTimestamp');\nconst getUrl = require('getUrl');\nconst encodeUriComponent = require('encodeUriComponent');\nconst generateRandom = require('generateRandom');\n\n\n// Get the dataLayer event that triggered the tag\nconst event = readFromDataLayer('event');\n\nconst eventTimestamp = getTimestamp(); // used for eventlabel, transaction id, anti-cache\nconst uaCode = data.uaCode;\nconst excludeSelf = data.excludeSelf;\nconst batchHits = data.batchHits === 'yes';\nconst maxTags = data.maxTags;\nconst hostName = getUrl('host'); // used for product category, affiliation\nconst pathName = encodeUriComponent(getUrl('path'));\nconst fullHost = getUrl(); // location field\nconst eventLabel = data.customEventLabel ? data.customEventLabel : eventTimestamp;\nconst clientId = data.clientId ? data.clientId : eventTimestamp +' '+ generateRandom(1,999);\n\n// measurement protocol prep\nlet endPoint = 'https://www.google-analytics.com/collect?z=' + eventTimestamp +\n    '&v=1' +\n    '&tid=' + uaCode +\n    '&cid=' + clientId +\n    '&t=event' +\n    '&dp=' + pathName +\n    '&dh=' + hostName +\n    '&dl=' + encodeUriComponent(fullHost) +\n    '&pa=purchase' +\n    '&ta=' + hostName + // affiliation\n    '&ec=gtm_monitor'\n;\n\nlet eventValue = 0;\n\n// Utility for splitting an array into multiple arrays of given size\nconst splitToBatches = (arr, size) => {\n  const newArr = [];\n  for (let i = 0, len = arr.length; i < len; i += size) {\n    newArr.push(arr.slice(i, i + size));\n  }\n  return newArr;\n};\n\n// The addEventCallback gets two arguments: container ID and a data object with an array of tags that fired\naddEventCallback((ctid, eventData) => {\n\n  // Filter out the monitoring tag itself\n  const tags = eventData.tags.filter(t => t.exclude !== 'true');\n  \n  // If batching is enabled, split the tags into batches of the given size\n  const batches = batchHits ? splitToBatches(tags, maxTags) : [tags];\n  \n  const debugRegex = \"[dD][eE][bB][uU][gG]\";\n  \n  // For each batch, build a payload and dispatch to the endpoint as a GET request\n  batches.forEach(tags => {\n    let payload = '&ea=' + encodeUriComponent(event) + '&ti=' + eventTimestamp +\n        '&el=' + eventLabel;\n    \n    let countTags = 0;\n    tags.forEach((tag, idx) => {\n      \n      let tagName = tag.name ? tag.name : 'unnamed tag with ID: ' + tag.id;\n      \n      if (excludeSelf == false || tagName.match(debugRegex) == null) {\n        \n         eventValue = eventValue + 1;\n         const tagPrefix = '&pr' + (countTags + 1);\n      \n         payload +=\n           tagPrefix + 'id=' + tag.id +                        // SKU\n           tagPrefix + 'nm=' + encodeUriComponent(tagName) +   // product name\n           tagPrefix + 'va=' + tag.status +                    // variant\n           tagPrefix + 'ca=' + event +                         // category\n           tagPrefix + 'br=' + pathName +                      // brand\n           tagPrefix + 'qt=1' + \t\t\t\t\t\t\t\t// quantity = 1\n           tagPrefix + 'pr=' + tag.executionTime + \".00\";      // time = money\n         countTags++;\n      }\n\n    });\n    payload += '&tr=' + eventValue + \".00\" +   // trans.revenue = nr of prods\n    \t '&ev=' + eventValue;                  // event value = nr of products\n    \n    if (countTags > 0) {\n\t    sendPixel(endPoint + payload, null, null);\n    } // prevent pixel from sending when there are no tags\n  });\n});\n\n// After adding the callback, signal tag completion\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_data_layer\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"keyPatterns\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"event\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"send_pixel\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urls\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"https://www.google-analytics.com/collect*\"\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_event_metadata\",\n        \"versionId\": \"1\"\n      },\n      \"param\": []\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"get_url\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"urlParts\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        },\n        {\n          \"key\": \"queriesAllowed\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 11/07/2019, 09:11:59\n\n\n"
+            }
+        ]
+    }
+}
